@@ -1,2 +1,16 @@
 
-document.getElementById("app").innerHTML = "<p style='color:green;'>✅ JavaScript carregado com sucesso!</p>";
+import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.5.1';
+
+const transcriber = await pipeline('automatic-speech-recognition', 'Xenova/whisper-tiny');
+
+document.getElementById('fileInput').addEventListener('change', async (event) => {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const resultElement = document.getElementById('result');
+  resultElement.textContent = '🔄 Transcrevendo... Aguarde.';
+
+  const audioData = await file.arrayBuffer();
+  const output = await transcriber(audioData);
+  resultElement.textContent = '📝 Transcrição:\n\n' + output.text;
+});
