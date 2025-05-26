@@ -1,18 +1,18 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Transcritor BrainGO!</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧠 Transcritor BrainGO!</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script type="module" src="assets/index.js"></script>
   </head>
   <body>
-    <h1>🧠 Transcritor BrainGO!</h1>
-    <p>Envie um áudio para transcrição diretamente no navegador:</p>
-    <input type="file" id="fileInput" accept="audio/*"/>
-    <div id="result" class="output"></div>
-    <footer>Feito com ❤️ usando Whisper Web e Transformers.js</footer>
+    <div id="app">
+      <h1>🧠 Transcritor BrainGO</h1>
+      <p>Reconhecimento de fala via Whisper no seu navegador.</p>
+      <input type="file" id="fileInput" accept="audio/*" />
+      <pre id="result"></pre>
+    </div>
   </body>
 </html>

@@ -1,0 +1,15 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+  padding: 2rem;
+  color: #222;
+}
+#result {
+  white-space: pre-wrap;
+  text-align: left;
+  background: #eee;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
