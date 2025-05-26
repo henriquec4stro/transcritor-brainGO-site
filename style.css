@@ -1,0 +1,16 @@
+
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+  color: #111;
+  text-align: center;
+  padding: 2em;
+}
+h1 {
+  color: #521fbc;
+}
+footer {
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #777;
+}
